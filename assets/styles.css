@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+
 
 .header {
     background-color: #275f94;
@@ -28,10 +31,10 @@ header nav button {
 }
 
 .background {
-    background-image: url("summer.jpg");
+    background-image: url("Warrensburg.jpg");
     height: 300px;
     background-size: cover;
-    max-width: 1600px;
+    max-width: 1920px;
     background-position: 50% 65%;
     margin: auto;
 }
@@ -42,12 +45,13 @@ body {
 }
 
 .body-containers {
-    max-width: 1600px;
+    max-width: 1920px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
     padding-top: 30px;
+    padding-bottom: 30px;
     
 }
 
@@ -56,32 +60,158 @@ body {
     background: rgb(235, 235, 235);
     color: #275f94;
     padding: 30px 30px;
-    border-radius: 5%;
+    border-radius: 50px;
+    max-width: 315px;
+    max-height: 600px;
+    min-width: 315px;
+    min-height: 600px;
 }
 
 .producer {
-    max-width: 350px;
-    max-height: 450px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .producer h2 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     text-align: left;
 }
 
 .producer h3 {
     color: #585858;
+    margin-top: 7px;
+    font-size: 17px;
 }
 
 .producer img {
     border-radius: 75px;
+    padding-bottom: 10px;
 
 }
 
-.service-center {
-
+.producer p {
+    padding-top: 10px;
 }
+
+.about-me h2 {
+    font-size: 30px;
+}
+
+.about-me p {
+    font-size: 18px;
+    color: #585858;
+    text-indent: 50px;
+    padding-top: 35px;
+}
+
+.service-center h2 {
+    font-size: 30px;
+}
+
+.service-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.policy-change {
+    color: #c5c5c5;
+    background-color: #275f94;
+    font-size: 18px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.id-card {
+    color: #c5c5c5;
+    background-color: #275f94;
+    font-size: 18px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.quote-now {
+    color: #c5c5c5;
+    background-color: #275f94;
+    font-size: 18px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.submit-claim {
+    color: #c5c5c5;
+    background-color: #275f94;
+    font-size: 18px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.make-payment {
+    color: #c5c5c5;
+    background-color: #275f94;
+    font-size: 18px;
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.office-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.office-location h3 {
+    color: #585858;
+}
+
+.office-location iframe {
+    margin: auto;
+}
+
+.location-info {
+    padding-top: 50px;
+}
+
+.insurance-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insurance-app h2 {
+    font-size: 30px;
+    
+}
+
+.insurance-app-icon {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.app-download {
+    width: 250px;
+}
+
 
 .pictogram {
     display: flex;
@@ -91,7 +221,7 @@ body {
     margin: auto;
     color:#585858;
     padding-top: 50px;
-    border-color: solid red;
+    padding-bottom: 50px;
 }
 
 .pictogram-title img {
@@ -101,10 +231,172 @@ body {
 
 footer {
     background-color: #275f94;
-    max-width: 1600px;
+    max-width: 1920px;
     margin: auto;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 20px 20px;
+}
+
+footer h3 {
+    font-size: 16px;
+    text-align: right;
+    font-weight: normal;
+    
+}
+
+
+.facebook-logo {
+    height: 60px;
+    width: 60px;
+}
+
+@media (max-width: 550px) {
+    header nav button {
+        display: none;
+    }
+
+    .header img {
+        width: 250px;
+        height: 75px;
+    }
+    
+    .pictogram {
+        display: none;
+    }
+
+    .individual-container {
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .individual-container {
+        max-width: 450px;
+        max-height: 775px;
+        min-width: 450px;
+        min-height: 775px;
+        border-radius: 70px;
+    }
+
+    .producer h2 {
+        font-size: 75px;
+    }
+
+    .producer h3 {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+
+    .producer img {
+        height: 350px;
+    }
+
+    .producer p {
+        font-size: 24px;
+    }
+
+    .about-me h2 {
+        font-size: 45px;
+        margin-left: 15px;
+    }
+
+    .about-me p {
+        font-size: 24px;
+        text-indent: 55px;
+        padding-top: 60px;
+        line-height: 35px;
+    }
+
+    .service-center h2 {
+        font-size: 45px;
+        margin-left: 15px;
+    }
+
+    .policy-change {
+        font-size: 24px;
+        height: 74px;
+        width: 325px;
+        border-radius: 37px;
+        margin-top: 30px;
+    }
+
+    .id-card {
+        font-size: 24px;
+        height: 74px;
+        width: 325px;
+        border-radius: 37px;
+        margin-top: 20px;
+    }
+
+    .submit-claim {
+        font-size: 24px;
+        height: 74px;
+        width: 325px;
+        border-radius: 37px;
+        margin-top: 20px;
+    }
+
+    .make-payment {
+        font-size: 24px;
+        height: 74px;
+        width: 325px;
+        border-radius: 37px;
+        margin-top: 20px;
+    }
+
+    .quote-now {
+        font-size: 24px;
+        height: 74px;
+        width: 325px;
+        border-radius: 37px;
+        margin-top: 20px;
+    }
+
+    .office-location iframe {
+        height: 350px;
+        width: 350px;
+    }
+
+    .office-location h3 {
+        font-size: 27px;
+    }
+
+    .office-location p {
+        font-size: 22px;
+    }
+
+    .insurance-app h2 {
+        font-size: 45px;
+        margin-left: 15px;
+    }
+
+    .insurance-app-icon {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 40px;
+    }
+
+    .app-download {
+        width: 310px;
+    }
+
+}
+
+.page-title {
+    font-size: 45px;
+    text-align: center;
+    color: #275f94;
+}
+
+.secondary-content {
+    width: 1920px;
+    margin: auto;
+    color:#585858
+}
+
+.pp-list {
+    list-style-type: none;
 }
